@@ -31,8 +31,11 @@ class ToyShop {
 
     public void organizeGiveaway() {
         Random random = new Random();
+        int randomNum = random.nextInt(100);
+        System.out.println(randomNum);
         for (Toy toy : toys) {
-            int randomNum = random.nextInt(100);
+//            int randomNum = random.nextInt(100);
+//            System.out.println(randomNum);
             if (randomNum < toy.getWeight()) {
                 prizeToys.add(toy);
                 toy.setQuantity(toy.getQuantity() - 1);

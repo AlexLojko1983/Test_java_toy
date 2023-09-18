@@ -5,9 +5,9 @@ public class Main {
         ToyShop toyShop = new ToyShop();
 
         // Добавление новых игрушек
-        Toy toy1 = new Toy(1, "Кукла", 3, 50);
+        Toy toy1 = new Toy(1, "Кукла", 3, 30);
         Toy toy2 = new Toy(2, "Мяч", 5, 30);
-        Toy toy3 = new Toy(3, "Машинка", 2, 70);
+        Toy toy3 = new Toy(3, "Машинка", 2, 40);
 
         toyShop.addToy(toy1);
         toyShop.addToy(toy2);
