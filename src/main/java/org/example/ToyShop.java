@@ -34,12 +34,10 @@ class ToyShop {
         int randomNum = random.nextInt(100);
         System.out.println(randomNum);
         for (Toy toy : toys) {
-//            int randomNum = random.nextInt(100);
-//            System.out.println(randomNum);
-            if (randomNum < toy.getWeight()) {
+            if (randomNum < toy.getWeight() && toy.getQuantity() > 0) {
                 prizeToys.add(toy);
                 toy.setQuantity(toy.getQuantity() - 1);
-                System.out.printf("%s осталось количеством: %s%n ", toy.getName(), toy.getQuantity());
+                System.out.printf("Игрушка '%s' осталась количеством: %s%n ", toy.getName(), toy.getQuantity());
                 break;
             }
         }
