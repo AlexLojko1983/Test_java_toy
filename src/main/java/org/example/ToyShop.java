@@ -39,6 +39,7 @@ class ToyShop {
             if (randomNum < toy.getWeight()) {
                 prizeToys.add(toy);
                 toy.setQuantity(toy.getQuantity() - 1);
+                System.out.printf("%s осталось количеством: %s%n ", toy.getName(), toy.getQuantity());
                 break;
             }
         }

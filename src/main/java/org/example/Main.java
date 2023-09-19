@@ -5,9 +5,9 @@ public class Main {
         ToyShop toyShop = new ToyShop();
 
         // Добавление новых игрушек
-        Toy toy1 = new Toy(1, "Кукла", 3, 30);
-        Toy toy2 = new Toy(2, "Мяч", 5, 30);
-        Toy toy3 = new Toy(3, "Машинка", 2, 40);
+        Toy toy1 = new Toy(1, "Барби", 3, 30);
+        Toy toy2 = new Toy(2, "Футбольный Мяч", 5, 30);
+        Toy toy3 = new Toy(3, "Танк", 2, 40);
 
         toyShop.addToy(toy1);
         toyShop.addToy(toy2);
@@ -27,19 +27,19 @@ public class Main {
         if (prizeToy != null) {
             System.out.println("Вы получили призовую игрушку: " + prizeToy.getName());
         } else {
-            System.out.println("Призовые игрушки закончились");
+            System.out.println("Все игрушки выдали");
         }
         prizeToy = toyShop.getPrizeToy();
         if (prizeToy != null) {
             System.out.println("Вы получили призовую игрушку: " + prizeToy.getName());
         } else {
-            System.out.println("Призовые игрушки закончились");
+            System.out.println("Все игрушки выдали");
         }
         prizeToy = toyShop.getPrizeToy();
         if (prizeToy != null) {
             System.out.println("Вы получили призовую игрушку: " + prizeToy.getName());
         } else {
-            System.out.println("Призовые игрушки закончились");
+            System.out.println("Все игрушки выдали");
         }
     }
 }
