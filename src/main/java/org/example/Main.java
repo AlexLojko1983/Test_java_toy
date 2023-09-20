@@ -21,24 +21,8 @@ public class Main {
             toyShop.organizeGiveaway();
 
 
-            // Получение призовой игрушки
-            Toy prizeToy = toyShop.getPrizeToy();
-            if (prizeToy != null) {
-                System.out.println("Вы получили призовую игрушку: " + prizeToy.getName());
-            } else {
-                System.out.println("Все игрушки выдали");
-            }
-            prizeToy = toyShop.getPrizeToy();
-            if (prizeToy != null) {
-                System.out.println("Вы получили призовую игрушку: " + prizeToy.getName());
-            } else {
-                System.out.println("Все игрушки выдали");
-            }
-            prizeToy = toyShop.getPrizeToy();
-            if (prizeToy != null) {
-                System.out.println("Вы получили призовую игрушку: " + prizeToy.getName());
-            } else {
-                System.out.println("Все игрушки выдали");
-            }
+        // Получение призовой игрушки
+        toyShop.getPrizeToy(2); // Выдача по номеру
+        toyShop.getPrizeToy();  // Выдача всех игрушек
         }
     }
